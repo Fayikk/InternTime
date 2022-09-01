@@ -23,13 +23,22 @@ namespace GenericsIntro_3
         public void Add(T item)//Buradaki "T" programcı hangi tip'i girmek istiyorsa
         {
             T[] tempArray = items;//Burada geçici dizinin referansı items'ın referansını tutacaktır anlamına gelmektedir.
-         
+
             items = new T[items.Length + 1];
             for (int i = 0; i < tempArray.Length; i++)
             {
                 items[i] = tempArray[i];//Burada tempArray geçici değişkenine yazılan değerlerimizi items'a geri aktarma işlemini gerçekleştiriyoruz.
             }
-            items[items.Length-1] = item;
+            items[items.Length - 1] = item;
+        }
+        public int Length//Bu yordam sayesinde listedeki elemanın uzunluğunu bulabilmekteyiz
+        {
+            get { return items.Length; }
+        }
+        //Elemanları görmek istersek eğer 
+        public T[] Items
+        {
+            get { return items; }
         }
     }
 }
