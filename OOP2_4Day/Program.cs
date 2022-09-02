@@ -33,16 +33,17 @@ namespace OOP2_4Day
 
             
             List<ICreditManager> krediler = new List<ICreditManager>() { ihtiyacKrediManager,konutKrediManager,tasitKrediManager };
-            List<ILoggerService> servisler = new List<ILoggerService> (){ dataBaseLoggerService,fileLoggerService,oracleLoggerService,smsLoggerService};
+            List<ILoggerService> servisler = new List<ILoggerService> { new SmsLoggerService(),new FileLoggerService(),new DataBaseLoggerService(),new OracleLoggerService()};
             basvuruManager.KrediOnBilgilendirmesiYap(krediler);
             Console.WriteLine("----------------------");
             Console.WriteLine("----------------------");
             Console.WriteLine("----------------------");
             basvuruManager.BasvuruYap(konutKrediManager,new List<ILoggerService>() { oracleLoggerService,fileLoggerService});
             Console.WriteLine("----------------------");
-
-            basvuruManager.BasvuruYap(tasitKrediManager, servisler);
+            Console.WriteLine("|||||||||||||||||||||||||");
+            basvuruManager.BasvuruYap(tasitKrediManager,servisler);//Burada bütün servisler tarafından hizmet verilmiştir.
             Console.WriteLine("----------------------");
+            Console.WriteLine("|||||||||||||||||||||||||");
 
             basvuruManager.BasvuruYap(esnafKredisiManager, servisler);
             Console.WriteLine("-----------------------");

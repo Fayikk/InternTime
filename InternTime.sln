@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Oriented_Programing4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP2_4Day", "OOP2_4Day\OOP2_4Day.csproj", "{A97006CA-81B0-4E00-9658-C9646BC735B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter", "GameCenter\GameCenter.csproj", "{2E4DA7DE-FDCA-4B07-81DE-449022F303D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A97006CA-81B0-4E00-9658-C9646BC735B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A97006CA-81B0-4E00-9658-C9646BC735B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A97006CA-81B0-4E00-9658-C9646BC735B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4DA7DE-FDCA-4B07-81DE-449022F303D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4DA7DE-FDCA-4B07-81DE-449022F303D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4DA7DE-FDCA-4B07-81DE-449022F303D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4DA7DE-FDCA-4B07-81DE-449022F303D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
